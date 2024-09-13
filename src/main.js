@@ -2,6 +2,9 @@ import { createApp } from 'vue'
 import BootstrapVue3 from 'bootstrap-vue-3'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
+import 'element-plus/dist/index.css'
+import ElementPlus from 'element-plus'
+
 
 
 import App from './App.vue'
@@ -17,12 +20,14 @@ const app = createApp(App)
 app.use(BootstrapVue3)
 app.use(router)
 // app.use(router)
+app.use(ElementPlus)
 app.mount('#app')
+
 
 // Import the functions you need from the SDKs you need
 
-//import { initializeApp } from "firebase/app";
-//import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
